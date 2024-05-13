@@ -29,9 +29,30 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             //put your multiplatform dependencies here
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.logging)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.client.encoding)
+            implementation(libs.kotlin.coroutine)
+
+            implementation(libs.kermit)
+            api(libs.koin.core)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+        }
+
+        //Android
+        androidMain.dependencies {
+            implementation(libs.ktor.client.android)
+            api(libs.koin.android)
+        }
+
+
+        //iOS
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
         }
     }
 }
