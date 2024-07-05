@@ -7,7 +7,7 @@ import com.example.movieappkmm.domain.repository.MovieRepository
 
 internal class MovieRepositoryImpl(private val remoteDataSource: RemoteDataSource) : MovieRepository {
     override suspend fun getMovies(page: Int): List<Movie> {
-        return remoteDataSource.getMovies(page = page).result.map {
+        return remoteDataSource.getMovies(page = page).results.map {
             it.toMovie()
         }
     }
