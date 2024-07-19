@@ -12,6 +12,7 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* HomeScreen.swift */; };
 		F2B03E242C49B9B900184C56 /* MovieGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B03E232C49B9B900184C56 /* MovieGridItem.swift */; };
+		F2B03E272C4B08F400184C56 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B03E262C4B08F400184C56 /* DetailScreen.swift */; };
 		F2C526BA2C486EAE002D3FD5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C526B92C486EAE002D3FD5 /* HomeViewModel.swift */; };
 		F2C526BD2C487300002D3FD5 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C526BC2C487300002D3FD5 /* Sample.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		7555FF82242A565900829871 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B03E232C49B9B900184C56 /* MovieGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridItem.swift; sourceTree = "<group>"; };
+		F2B03E262C4B08F400184C56 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		F2C526B92C486EAE002D3FD5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F2C526BC2C487300002D3FD5 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				F2B03E252C4B087700184C56 /* details */,
 				F2C526BB2C4872D5002D3FD5 /* utils */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				F2C526B82C486E84002D3FD5 /* home */,
@@ -95,6 +98,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2B03E252C4B087700184C56 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				F2B03E262C4B08F400184C56 /* DetailScreen.swift */,
+			);
+			name = details;
 			sourceTree = "<group>";
 		};
 		F2C526B82C486E84002D3FD5 /* home */ = {
@@ -209,6 +220,7 @@
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				F2C526BD2C487300002D3FD5 /* Sample.swift in Sources */,
+				F2B03E272C4B08F400184C56 /* DetailScreen.swift in Sources */,
 				F2C526BA2C486EAE002D3FD5 /* HomeViewModel.swift in Sources */,
 				7555FF83242A565900829871 /* HomeScreen.swift in Sources */,
 				F2B03E242C49B9B900184C56 /* MovieGridItem.swift in Sources */,
