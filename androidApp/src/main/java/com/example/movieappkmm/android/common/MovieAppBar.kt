@@ -44,17 +44,17 @@ fun MovieAppBar(
                     Icon(
                         imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                         contentDescription = null,
-                        tint = MaterialTheme.colorScheme.onBackground
+                        tint = Color.White
                     )
                 }
-                Spacer(modifier = modifier.width(24.dp))
+                Spacer(modifier = modifier.width(15.dp))
             }
         }
 
         Text(
             text = currentScreen.title,
             style = MaterialTheme.typography.titleMedium,
-            modifier = modifier.padding(12.dp),
+            modifier = modifier.padding(start = 55.dp, top = 18.dp, bottom = 18.dp),
             color = Color.White
         )
     }
